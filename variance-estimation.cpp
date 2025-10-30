@@ -106,7 +106,7 @@ std::vector<int64_t> generateRandomVector(size_t size, int64_t max_val = 5) {
     return vec;
 }
 
-// Perform multiplication between 2^L plaintexts as in the circuit of Fig.4 of the paper and output the final ciphertext
+// Perform multiplication between 2^M plaintexts as in the circuit of Fig.4 of the paper and output the final ciphertext
 // "Accurate BGV Parameters Selection: Accounting for Secret and Public Key Dependencies in Average-Case Analysis"
 // B. Biasioli, C. Marcolla, N. Murru, M. Urani
 Ciphertext<DCRTPoly> buildMultiplicationTree(CryptoContext<DCRTPoly> cryptoContext,
@@ -242,3 +242,4 @@ int main() {
 
     return 0;
 }
+
