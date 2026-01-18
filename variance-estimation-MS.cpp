@@ -168,12 +168,12 @@ int main() {
 		std::vector<NTL::ZZ> skint;
 		
 		
-		for (size_t i = 0; i < c0.GetLength(); ++i) {
-			std::string c0_str = c0[i].ToString();  
+		for (size_t j = 0; j < c0.GetLength(); ++j) {
+			std::string c0_str = c0[j].ToString();  
 			c0int.push_back(NTL::conv<NTL::ZZ>(c0_str.c_str()));
-			std::string c1_str = c1[i].ToString();  
+			std::string c1_str = c1[j].ToString();  
 			c1int.push_back(NTL::conv<NTL::ZZ>(c1_str.c_str()));
-			std::string sk_str = sk[i].ToString();  
+			std::string sk_str = sk[j].ToString();  
 			skint.push_back(NTL::conv<NTL::ZZ>(sk_str.c_str())); 
 		}
 		// End transformation

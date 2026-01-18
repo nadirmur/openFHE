@@ -193,10 +193,10 @@ int main() {
 
 			// Start transform type of coefficients of the polynomial sk (secret key) c0 and c1 (polynomials of the ciphertext) in NTL::ZZ in order to manage large integers
             std::vector<NTL::ZZ> c0int, c1int, skint;
-            for (size_t i = 0; i < c0.GetLength(); ++i) {
-                c0int.push_back(NTL::conv<NTL::ZZ>(c0[i].ToString().c_str()));
-                c1int.push_back(NTL::conv<NTL::ZZ>(c1[i].ToString().c_str()));
-                skint.push_back(NTL::conv<NTL::ZZ>(sk[i].ToString().c_str()));
+            for (size_t j = 0; j < c0.GetLength(); ++j) {
+                c0int.push_back(NTL::conv<NTL::ZZ>(c0[j].ToString().c_str()));
+                c1int.push_back(NTL::conv<NTL::ZZ>(c1[j].ToString().c_str()));
+                skint.push_back(NTL::conv<NTL::ZZ>(sk[j].ToString().c_str()));
             }
 			// End transformation
 
